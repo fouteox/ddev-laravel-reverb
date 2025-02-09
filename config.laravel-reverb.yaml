@@ -7,5 +7,5 @@ web_extra_exposed_ports:
 
 web_extra_daemons:
   - name: reverb
-    command: bash -c 'php artisan reverb:start'
-    directory: ${DDEV_COMPOSER_ROOT}
+    command: "cd ${DDEV_COMPOSER_ROOT} && php artisan reverb:start"
+    directory: /var/www/html
